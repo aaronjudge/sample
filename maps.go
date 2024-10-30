@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type structWithMap struct {
 	m map[int]int
 }
@@ -18,7 +20,9 @@ func test_map_string_to_int(m map[string]int) {}
 
 //nolint:all
 //go:noinline
-func test_array_of_maps(m [2]map[string]int) {}
+func test_array_of_maps(m [2]map[string]int) {
+	fmt.Println(m[0]["bar"])
+}
 
 //nolint:all
 //go:noinline

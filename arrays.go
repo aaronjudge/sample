@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /********************/
 /* ARRAY PARAMETERs */
 /********************/
@@ -14,7 +16,9 @@ func test_rune_array(x [2]rune) {}
 
 //nolint:all
 //go:noinline
-func test_string_array(x [2]string) {}
+func test_string_array(x [2]string) {
+	fmt.Println(x)
+}
 
 //nolint:all
 //go:noinline
